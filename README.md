@@ -2,7 +2,7 @@
 
 ## Usage
 
-```shell
+```python
 In [2]: from piholesdk import PiHoleClient
 
 pihole_node =  {"ssh_ip_address":"192.168.178.100",
