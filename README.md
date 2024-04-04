@@ -27,26 +27,26 @@ You can then use the methods provided by the PiHoleClient class to interact with
 client.read_custom_list()
 {'status': True,
  'message': 'Retrieved A record list.',
- 'data': {'netbox.mteke.com': '192.168.178.102',
-  'guacamole.mteke.com': '192.168.178.102',
-  'pfsense.mteke.com': '192.168.178.1',
-  'pihole.mteke.com': '192.168.178.100',
-  'vault.mteke.com': '192.168.178.102',
-  'jenkins.mteke.com': '192.168.178.102',
-  'grafana.mteke.com': '192.168.178.102',
-  'rabbitmq.mteke.com': '192.168.178.102',
-  'portainer.mteke.com': '192.168.178.102',
-  'proxmox03.mteke.com': '192.168.178.32',
-  'proxmox01.mteke.com': '192.168.178.30',
-  'proxmox02.mteke.com': '192.168.178.31',
-  'yangsuite.mteke.com': '192.168.178.102',
-  'homeassistant.mteke.com': '192.168.178.161',
-  'prometheus.mteke.com': '192.168.178.103',
-  'ubuntu.mteke.com': '192.168.178.97'}}
+ 'data': {'netbox.domain.com': '192.168.178.102',
+  'guacamole.domain.com': '192.168.178.102',
+  'pfsense.domain.com': '192.168.178.1',
+  'pihole.domain.com': '192.168.178.100',
+  'vault.domain.com': '192.168.178.102',
+  'jenkins.domain.com': '192.168.178.102',
+  'grafana.domain.com': '192.168.178.102',
+  'rabbitmq.domain.com': '192.168.178.102',
+  'portainer.domain.com': '192.168.178.102',
+  'proxmox03.domain.com': '192.168.178.32',
+  'proxmox01.domain.com': '192.168.178.30',
+  'proxmox02.domain.com': '192.168.178.31',
+  'yangsuite.domain.com': '192.168.178.102',
+  'homeassistant.domain.com': '192.168.178.161',
+  'prometheus.domain.com': '192.168.178.103',
+  'ubuntu.domain.com': '192.168.178.97'}}
 ```
 Creating a DNS Record
 ```python
-record = PiHoleClient.create_dns_record(hostname="jur", ip_address="6.6.6.9", domain="mteke.com")
+record = PiHoleClient.create_dns_record(hostname="jur", ip_address="6.6.6.9", domain="domain.com")
 ```
 
 Pushing a DNS A Record to PiHole Server

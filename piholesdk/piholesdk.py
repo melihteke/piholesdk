@@ -53,13 +53,3 @@ class PiHoleClient:
 
     def close_connection(self):
         self.client.close()
-
-pihole_node = {"ssh_ip_address":"192.168.178.100",
-               "ssh_username":"root",
-               "ssh_password":"!mlh1985"}
-
-client = PiHoleClient(**pihole_node)
-
-client.read_custom_list()
-record = PiHoleClient.create_dns_record(hostname="jur3", ip_address="6.6.6.7", domain="mteke.com")
-client.push_dns_record(record)
